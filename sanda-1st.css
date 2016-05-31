@@ -1,0 +1,156 @@
+*{
+box-sizing:border-box;
+margin: 0px;
+padding: 0px;
+}
+
+   
+.background{
+    background-image: url(image/background.jpg); 
+    background-size:100%;
+    background-attachment: fixed;
+}
+.nav img{
+    width:50%;    
+    margin: 0px;
+    text-align: center;
+}
+.nav{
+    text-align: center;
+}
+
+.container{
+    overflow: auto;
+}
+
+.thumbnail {
+    width: 40%;
+    height: 600px;
+    position: relative;   
+    border-bottom-width: 100%;
+    margin: 0 auto;
+}
+
+.thumbnail img{
+    width:100%;
+    margin: 0px;
+    margin: 0 auto;
+}
+
+.thumbnail div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.thumbnail div {
+    -webkit-animation: round 25s linear infinite;
+            animation: round 25s linear infinite;
+}
+
+@-webkit-keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+@keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+.thumbnail div:nth-child(5) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+
+.thumbnail div:nth-child(4) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+}
+
+.thumbnail div:nth-child(3) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+}
+
+.thumbnail div:nth-child(2) {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+}
+
+.thumbnail div:nth-child(1) {
+    -webkit-animation-delay: 20s;
+            animation-delay: 20s;
+}
+
+.button img{
+    width: 70%;
+    margin: 7px;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;    
+}
+.button{
+    width: 33%;
+    margin 0px;
+    text-align: center;
+    border-style: outset;
+    border-color: wheat;
+    border-width: 5px;
+    overflow: hidden;
+    float: left;;
+    -webkit-transition: width 1s;
+            transition: width 1s;
+}
+.thumbnail2{
+    float: left;    
+}
+.button:hover{
+   background-color: wheat;
+}
+.button p{
+    font-size: 20px;
+}
+.fb{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.footer{
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;    
+}
+.footer p{
+    padding: 100px;
+    text-align: center;  
+}
+.container{
+   overflow: auto;     
+}
